@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Hello world",
+    "version": "1.0",
+    "description": "alert hello world",
+    "content_scripts": [
+        {
+            "js": [
+                "./main.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "author": "Tobiloba Adebisi github.com/Adebisi1234",
+    "action": {
+        "default_title": "Hello world",
+        "default_popup": "popup.html"
+     },
+     
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "windows": "Ctrl+Q",
+                "mac": "Command+Q",
+                "chromeos": "Ctrl+Q",
+                "linux": "Ctrl+Q"
+            }
+        }
+    }
+}
