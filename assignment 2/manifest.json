@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Listening to events",
+    "version": "1.0",
+    "description": "Listening to event",
+    "content_scripts": [
+        {
+            "js": [
+                "./main.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ],
+            "RunAt": "document_end"
+        }
+    ],
+    "author": "Tobiloba Adebisi github.com/Adebisi1234",
+    "action": {
+        "default_title": "Listening to events",
+        "default_popup": "popup.html"
+    }
+}
