@@ -42,13 +42,3 @@ async function getWeather() {
         }
     }
 }
-
-chrome.runtime.onConnect.addListener(function (port) {
-    console.log("Connected .....");
-    port.onMessage.addListener(async function (msg) {
-        if (msg.type === "weather") {
-            const res = await getWeather()
-            chrome.runtime.sendMessage(res)
-        }
-    });
-});
