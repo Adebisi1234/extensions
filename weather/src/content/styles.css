@@ -1,0 +1,49 @@
+#widget_root {
+  width: fit-content;
+  height: fit-content;
+  position: fixed;
+  left: 99%;
+  top: 98%;
+  transform: translateX(-100%) translateY(-100%);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  /* From https://css.glass */
+  background: rgba(102, 51, 153, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
+  border: 1px solid rgba(102, 51, 153, 0.3);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.reload {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+}
+.badge {
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: rgb(52, 52, 52);
+  color: aliceblue;
+  padding: 2.5px;
+}
+
+svg {
+  width: 16px;
+  height: 16px;
+}

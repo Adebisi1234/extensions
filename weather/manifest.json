@@ -33,5 +33,15 @@
   "permissions": [
     "storage",
     "geolocation"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "images/refresh-34-16.png"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
   ]
 }
