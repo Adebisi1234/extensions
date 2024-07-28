@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Weather Widget",
+  "description": "Extension that shows the days weather and forecast .",
+  "version": "1.0",
+  "icons": {
+    "16": "images/weather-46-16.png",
+    "32": "images/weather-46-32.png",
+    "48": "images/weather-46-48.png",
+    "128": "images/weather-46-128.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "contentScript.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Weather",
+    "default_popup": "popup.html"
+  },
+  "author": "Tobiloba Adebisi https://www.github.com/Adebisi1234",
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "permissions": [
+    "storage",
+    "geolocation"
+  ]
+}
